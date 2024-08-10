@@ -35,5 +35,10 @@ public class TaskController {
         return null;
     }
 
+    @DeleteMapping("/tasks/{id}")
+    public ResponseEntity<Task> deleteTaskById(@PathVariable Long id){
+        return null;
+    }
+
 
 }
