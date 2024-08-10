@@ -30,5 +30,10 @@ public class TaskController {
         return null;
     }
 
+    @PutMapping("/tasks/{id}")
+    public ResponseEntity<Task> updateTask(@PathVariable Long id, @RequestBody Task task){
+        return null;
+    }
+
 
 }
