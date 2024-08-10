@@ -4,10 +4,7 @@ import com.example.todo_list.entity.Task;
 import com.example.todo_list.service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -25,6 +22,11 @@ public class TaskController {
 
     @GetMapping("/tasks/{id}")
     public ResponseEntity<Task> listTaskById(@PathVariable Long id){
+        return null;
+    }
+
+    @PostMapping("/tasks")
+    public ResponseEntity<Task> saveTask(@RequestBody Task task){
         return null;
     }
 
