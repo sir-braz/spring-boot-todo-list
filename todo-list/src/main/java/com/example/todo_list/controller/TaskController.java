@@ -4,6 +4,7 @@ import com.example.todo_list.entity.Task;
 import com.example.todo_list.service.TaskService;
 import com.example.todo_list.utility.BackendException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,7 +22,7 @@ public class TaskController {
         try{
 
         }catch (Exception ex){
-            return ResponseEntity.badRequest().body(null);
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
         }
         return null;
     }
