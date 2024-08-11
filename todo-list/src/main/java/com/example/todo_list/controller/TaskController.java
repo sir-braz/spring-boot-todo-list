@@ -39,6 +39,11 @@ public class TaskController {
 
     @PostMapping("/tasks")
     public ResponseEntity<Task> saveTask(@RequestBody Task task){
+        try{
+
+        }catch (BackendException ex){
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
         return null;
     }
 
