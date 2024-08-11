@@ -29,6 +29,11 @@ public class TaskController {
 
     @GetMapping("/tasks/{id}")
     public ResponseEntity<Task> listTaskById(@PathVariable Long id){
+        try{
+
+        }catch (BackendException ex){
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
         return null;
     }
 
