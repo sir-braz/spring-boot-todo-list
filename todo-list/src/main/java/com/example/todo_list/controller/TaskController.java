@@ -59,6 +59,11 @@ public class TaskController {
 
     @DeleteMapping("/tasks/{id}")
     public ResponseEntity<Task> deleteTaskById(@PathVariable Long id){
+        try{
+
+        }catch (BackendException ex){
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
         return null;
     }
 
