@@ -16,7 +16,7 @@ This is a RESTful API for managing tasks. It allows you to perform CRUD operatio
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/youruse/task-management-api.git](https://github.com/sir-braz/spring-boot-todo-list.git)](https://github.com/sir-braz/spring-boot-todo-list.git)
+    git clone (https://github.com/sir-braz/spring-boot-todo-list.git)
     ```
 
 2. **Navigate to the project directory:**
