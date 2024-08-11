@@ -2,6 +2,7 @@ package com.example.todo_list.controller;
 
 import com.example.todo_list.entity.Task;
 import com.example.todo_list.service.TaskService;
+import com.example.todo_list.utility.BackendException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,6 +18,11 @@ public class TaskController {
 
     @GetMapping("/tasks")
     public ResponseEntity<List<Task>> listAllTasks(){
+        try{
+
+        }catch (Exception ex){
+            return ResponseEntity.badRequest().body(null);
+        }
         return null;
     }
 
