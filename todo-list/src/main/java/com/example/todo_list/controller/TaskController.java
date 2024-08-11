@@ -21,7 +21,7 @@ public class TaskController {
     public ResponseEntity<List<Task>> listAllTasks(){
         try{
 
-        }catch (Exception ex){
+        }catch (BackendException ex){
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
         }
         return null;
