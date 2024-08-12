@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -17,6 +16,18 @@ function App() {
           </div>
           <div className='todo-input-item'>
             <button type='button' className='primaryBtn'>Add</button>
+          </div>
+        </div>
+        <div className='btn-area'>
+            <button>Todo</button>
+            <button>Completed</button>
+        </div>
+
+        <div className='todo-list'>
+          
+          <div className='todo-list-item'>
+            <div>Task 1</div>
+            <div>Description</div>
           </div>
         </div>
       </div>
